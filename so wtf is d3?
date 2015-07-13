@@ -1,0 +1,28 @@
+so wtf is d3?
+
+something about enter, update, and modifying keys... think it has something to do with how these things move.
+
+general update pat 1
+- data join is followed by operations on enter, update, and exit
+- if no key is present, so entering elements always occur at the end
+- if theres more new data coming in than old, new elemnts are entered
+
+general update pat 2
+- adding a key means that you can enter new elements on top of the key value
+- the key seems to be the index within the array for the new elements to enter
+- text content needs updating on enter because mapping from letter to element never changes?
+- x position of the text element must be recomputed on update as well as enter
+
+general update pat 3
+- transitions (animations) are defined for enter, updated, and exited.
+- merged enter + update doesn't have two transitions, because these would supercede the transition already scheduled on entering and updating.
+- concurrent transitions are possible, but i think you would need to define y yourself. x is defined 'statically'
+
+thinking with joins
+-d3 has no primitive for creating multiple dom elements
+-you can use append
+- ex to try
+  svg.append('circle')
+    .attr('cx', d.x)
+    .attr('cy', d.y)
+    .attr('r', 2.5)
