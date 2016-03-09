@@ -1,6 +1,25 @@
-#watchout
+# ReduxSimpleStarter
 
-This is a copy of the work I did on a private repo, originally a project from
-[Hack Reactor's](http://hackreactor.com) curriculum. This project was worked
-on with a pair; it's representative of the kind of problems that I've tackled,
-but not of my solo work.
+Interested in learning [Redux](https://www.udemy.com/react-redux/)?
+
+###Getting Started###
+
+There are two methods for getting started with this repo.
+
+####Familiar with Git?#####
+Checkout this repo, install depdencies, then start the gulp process with the following:
+
+```
+	> git clone git@github.com:StephenGrider/ReduxSimpleStarter.git
+	> cd ReduxSimpleStarter
+	> npm install
+	> npm start
+```
+
+####Not Familiar with Git?#####
+Click [here](https://github.com/StephenGrider/ReactStarter/releases) then download the .zip file.  Extract the contents of the zip file, then open your terminal, change to the project directory, and:
+
+```
+	> npm install
+	> npm start
+```
